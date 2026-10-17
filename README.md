@@ -101,6 +101,3 @@ Run all cells; the notebook takes a few minutes on a laptop. Keep the CSV in the
 - SHAP explanations and probability calibration
 - External validation on an independent cohort
 
-## 📜 License
-
-Add a license of your choice (for example MIT). Check the original source and terms of the dataset before redistributing it.
