@@ -17,7 +17,7 @@ This project predicts a patient's cirrhosis status from demographics, lifestyle 
 
 ```
 .
-├── liver_cirrhosis_ml.ipynb        # Full notebook: EDA, preprocessing, models, evaluation
+├── liver_cirrhosis_ml_128(52).ipynb        # Full notebook: EDA, preprocessing, models, evaluation
 ├── liver_cirrhosis_dataset.csv     # Dataset (100 patients, 37 columns)
 ├── requirements.txt                # Python dependencies
 └── README.md
@@ -82,14 +82,14 @@ Adding the three severity scores (Scenario B) improved CV F1 by only about 0 to 
 ## 🚀 Getting started
 
 ```bash
-git clone https://github.com/<your-username>/liver-cirrhosis-ml-classification.git
+git clone https://github.com/aminul01-g/liver-cirrhosis-ml-classification.git
 cd liver-cirrhosis-ml-classification
 
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
-jupyter notebook liver_cirrhosis_ml.ipynb
+jupyter notebook liver_cirrhosis_ml_128(52).ipynb
 ```
 
 Run all cells; the notebook takes a few minutes on a laptop. Keep the CSV in the same folder as the notebook.
