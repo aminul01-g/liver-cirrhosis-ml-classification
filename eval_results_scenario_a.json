@@ -1,0 +1,107 @@
+{
+  "evaluated_at": "2026-11-26T19:12:20.821123+00:00",
+  "seed": 42,
+  "scenario": "A (severity features excluded: Fibrosis_Stage, MELD_Score, Child_Pugh_Class)",
+  "dataset": {
+    "rows": 100,
+    "features": 32,
+    "train": 80,
+    "holdout": 20,
+    "class_counts": {
+      "0": 36,
+      "1": 22,
+      "2": 42
+    }
+  },
+  "cv": "RepeatedStratifiedKFold 5-fold x 3 repeats",
+  "models": [
+    {
+      "model": "Logistic Regression",
+      "cv_accuracy_mean": 0.9458,
+      "cv_accuracy_std": 0.0553,
+      "cv_f1_macro_mean": 0.9307,
+      "cv_roc_auc_ovr_mean": 0.9968,
+      "holdout_accuracy": 0.95,
+      "holdout_balanced_accuracy": 0.9333,
+      "holdout_f1_macro": 0.9434,
+      "holdout_roc_auc_ovr": 0.9956
+    },
+    {
+      "model": "SVM (RBF)",
+      "cv_accuracy_mean": 0.9417,
+      "cv_accuracy_std": 0.0534,
+      "cv_f1_macro_mean": 0.9232,
+      "cv_roc_auc_ovr_mean": 0.9976,
+      "holdout_accuracy": 1.0,
+      "holdout_balanced_accuracy": 1.0,
+      "holdout_f1_macro": 1.0,
+      "holdout_roc_auc_ovr": 1.0
+    },
+    {
+      "model": "Decision Tree",
+      "cv_accuracy_mean": 0.9542,
+      "cv_accuracy_std": 0.0624,
+      "cv_f1_macro_mean": 0.9465,
+      "cv_roc_auc_ovr_mean": 0.9626,
+      "holdout_accuracy": 0.95,
+      "holdout_balanced_accuracy": 0.9333,
+      "holdout_f1_macro": 0.9434,
+      "holdout_roc_auc_ovr": 0.9528
+    },
+    {
+      "model": "Random Forest",
+      "cv_accuracy_mean": 0.9875,
+      "cv_accuracy_std": 0.025,
+      "cv_f1_macro_mean": 0.9861,
+      "cv_roc_auc_ovr_mean": 1.0,
+      "holdout_accuracy": 1.0,
+      "holdout_balanced_accuracy": 1.0,
+      "holdout_f1_macro": 1.0,
+      "holdout_roc_auc_ovr": 1.0
+    },
+    {
+      "model": "Extra Trees",
+      "cv_accuracy_mean": 0.9958,
+      "cv_accuracy_std": 0.0156,
+      "cv_f1_macro_mean": 0.9948,
+      "cv_roc_auc_ovr_mean": 1.0,
+      "holdout_accuracy": 1.0,
+      "holdout_balanced_accuracy": 1.0,
+      "holdout_f1_macro": 1.0,
+      "holdout_roc_auc_ovr": 1.0
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_accuracy_mean": 0.9792,
+      "cv_accuracy_std": 0.0295,
+      "cv_f1_macro_mean": 0.9737,
+      "cv_roc_auc_ovr_mean": 1.0,
+      "holdout_accuracy": 1.0,
+      "holdout_balanced_accuracy": 1.0,
+      "holdout_f1_macro": 1.0,
+      "holdout_roc_auc_ovr": 1.0
+    },
+    {
+      "model": "Gaussian Naive Bayes",
+      "cv_accuracy_mean": 0.9292,
+      "cv_accuracy_std": 0.064,
+      "cv_f1_macro_mean": 0.9046,
+      "cv_roc_auc_ovr_mean": 0.9699,
+      "holdout_accuracy": 0.9,
+      "holdout_balanced_accuracy": 0.8667,
+      "holdout_f1_macro": 0.8796,
+      "holdout_roc_auc_ovr": 0.8744
+    },
+    {
+      "model": "LDA",
+      "cv_accuracy_mean": 0.6875,
+      "cv_accuracy_std": 0.0722,
+      "cv_f1_macro_mean": 0.5366,
+      "cv_roc_auc_ovr_mean": 0.7589,
+      "holdout_accuracy": 1.0,
+      "holdout_balanced_accuracy": 1.0,
+      "holdout_f1_macro": 1.0,
+      "holdout_roc_auc_ovr": 1.0
+    }
+  ]
+}
