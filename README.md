@@ -101,3 +101,6 @@ Run all cells; the notebook takes a few minutes on a laptop. Keep the CSV in the
 - SHAP explanations and probability calibration
 - External validation on an independent cohort
 
+## Evaluation
+
+A reproducible Scenario A benchmark with measured metrics is in [EVALUATION.md](EVALUATION.md).
